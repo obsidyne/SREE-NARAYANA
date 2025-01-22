@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Ayurmithra from './components/Ayurmithra';
+
+
 
 function App() {
   const [data, setData] = useState('');
@@ -13,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <h1>{data}</h1>
+      <Ayurmithra/>
     </div>
   );
 }
