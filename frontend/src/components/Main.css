@@ -1,0 +1,121 @@
+.container1{
+    background-image: url('../assets/herobg.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 35vw;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* height: 630px; */
+}
+
+.top{
+    height: 30%;
+}
+.center1{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title1{
+font-family: DM Serif Text;
+font-size: 64px;
+font-weight: 400;
+line-height: 87.74px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+}
+
+.box1{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+margin-top: 2%;
+height: 20%;
+background-color: #47402396;
+/* background-color: aqua; */
+width: 35%;
+border-radius: 25px;
+}
+
+.bottom{
+    /* background-color: rgb(88, 56, 206); */
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 5%;
+}
+.btn1{
+    background-color: rgb(0, 0, 0);
+    padding: .5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    border-radius: 20px;
+}
+.btn1 a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+.arrow{
+    height: 1.5vw;
+    border-radius: 5px;
+}
+
+
+
+@media (max-width:1400px){
+    .btn1{
+        padding-right: 2%;
+    }
+}
+
+
+@media (max-width:1200px) {
+
+    .container1{
+        height: 45vw;
+    }
+    .arrow{
+        padding-left: 0px;
+        height: 2vw;
+    }
+    .btn1{
+        padding-right: 2%;
+    }
+}
+@media (max-width:480px) 
+{
+    .title1{
+        font-size: 20px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .box1{
+        font-size: 16px;
+        /* display: flex; */
+        height: 20%;
+        margin-top: 0;
+        width: auto;
+    }
+    .container1{
+        height: 60vw;
+    }
+    .btn1{
+        padding: 1.5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 14px;
+    }
+    .arrow{
+        height: 4vw;
+    }
+
+}

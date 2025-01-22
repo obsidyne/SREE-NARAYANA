@@ -19,11 +19,13 @@
     color:#474023 ;/* Dark brown color */
     margin: 0;
     font-family: DM Sans;
+    margin-right: 3%;
 
   }
   .titlecontainer{
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
   .divider {
     margin: 10px auto;
@@ -62,4 +64,28 @@
     align-items: end;
     justify-content: end;
     padding-right: 5%;
+  }
+
+  @media (max-width:480px) {
+
+  .container{
+    margin-top: 5%;
+    }
+.titlecontainer{
+        display: flex;
+        flex-direction: column;
+  }
+.title{
+  font-size: 26px;
+}
+  .divider{
+    height: 3px;
+  }
+
+  .description{
+    font-size: 16px;
+  }
+  .btn{
+    margin-bottom: 4%;
+  }
   }

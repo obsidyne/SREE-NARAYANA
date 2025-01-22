@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Ayurmithra from './components/Ayurmithra';
-
+// import Ayurmithra from './components/Ayurmithra';
+import Hero from './components/Hero';
+import './App.css'
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
   return (
     <div className="App">
       <h1>{data}</h1>
-      <Ayurmithra/>
+      <Hero/>
+     
     </div>
   );
 }
