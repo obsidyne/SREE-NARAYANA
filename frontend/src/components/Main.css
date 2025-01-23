@@ -34,10 +34,10 @@ justify-content: center;
 align-items: center;
 font-size: 30px;
 margin-top: 2%;
-height: 20%;
+height: auto;
 background-color: #47402396;
 /* background-color: aqua; */
-width: 35%;
+width: auto;
 border-radius: 25px;
 }
 
