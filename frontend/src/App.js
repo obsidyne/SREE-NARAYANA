@@ -16,7 +16,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>{data}</h1>
       <Hero/>
      
     </div>
