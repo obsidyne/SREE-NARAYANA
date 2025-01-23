@@ -118,7 +118,9 @@ border-radius: 25px;
 
 @media (max-width:480px) 
 {
-   
+   .top{
+        background-color: transparent;
+   }
     .title1{
         font-size: 20px;
         margin-bottom: 0;
