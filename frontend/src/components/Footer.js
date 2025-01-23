@@ -2,9 +2,18 @@ import React from 'react'
 import './Footer.css'
 export default function Footer() {
   return (
-    <footer className='containerf'>
+<div className="fcontainer">
+
+<div className="top">
+        <div className="title">AYURVEDIC REJUVENATION</div>
+        {/* <hr className="divider2" /> */}
        
-        <div className="left">
+       </div>
+
+       <footer className='containerf'>
+       
+       
+       <div className="left">
             <div className="box">
                 <div className="rectangle"></div>
                 CONTACT US
@@ -45,11 +54,14 @@ export default function Footer() {
                 MOBILE
             </div>
             <div className="content">
-            +91 9447034485, +91 8848583869
+            +91 9447034485,<br /> +91 8848583869
             </div>
             </div>
         </div>
       
     </footer>
+</div>
+    
+   
   )
 }
