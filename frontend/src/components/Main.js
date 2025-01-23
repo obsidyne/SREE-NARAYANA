@@ -1,11 +1,14 @@
 import React from 'react'
 import './Main.css'
 import arrow from '../assets/arrow.jpeg'
+import Navbar from './Navbar';
 
 export default function Main() {
   return (
     <div className='container1'>
-        <div className="top"></div>
+        <div className="top">
+          <Navbar></Navbar>
+        </div>
         <div className="center1">
             <div className="title1">AYURVEDIC REJUVENATION</div>
             <div className="box1">

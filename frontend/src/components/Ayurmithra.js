@@ -4,7 +4,7 @@ import './Ayurmithra.css';
 
 export default function Ayurmithra() {
   return (
-    <div className="container">
+    <div className="container" id="about-us">
         <div className="titlecontainer">
         <h1 className="title">AYURMITHRA</h1>
         <hr className="divider" />
