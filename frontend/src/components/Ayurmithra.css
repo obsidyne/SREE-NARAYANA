@@ -9,7 +9,7 @@
     /* max-width: 600px; */
     /* margin: 20px auto; */
     font-family: 'Arial', sans-serif;
-    background-color: aqua
+    /* background-color: aqua */
   }
   
   .title {
@@ -66,6 +66,11 @@
     padding-right: 5%;
   }
 
+  @media (max-width:1200px){
+.description{
+  text-align: left;
+}
+  }
   @media (max-width:480px) {
 
   .container{
@@ -80,10 +85,19 @@
 }
   .divider{
     height: 3px;
+    padding-bottom: 0%;
+    margin-bottom:2% ;
   }
 
   .description{
     font-size: 16px;
+    margin-top: 0%;
+  }
+  .book-now{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
   }
   .btn{
     margin-bottom: 4%;

@@ -2,7 +2,7 @@
     background-image: url('../assets/herobg.jpeg');
     background-size: cover;
     background-position: center;
-    height: 35vw;
+    height: 40vw;
     color: white;
     padding-left: 10%;
     padding-right: 10%;
@@ -35,7 +35,8 @@ align-items: center;
 font-size: 30px;
 margin-top: 2%;
 height: auto;
-background-color: #47402396;
+padding: 1%;
+background-color: #484227b7;
 /* background-color: aqua; */
 width: auto;
 border-radius: 25px;
@@ -63,6 +64,7 @@ border-radius: 25px;
     text-decoration: none;
     font-weight: 600;
     color: white;
+    margin-right: 10%;
 }
 .arrow{
     height: 1.5vw;
@@ -72,6 +74,9 @@ border-radius: 25px;
 
 
 @media (max-width:1400px){
+    .container1{
+        height: 50vw;
+    }
     .btn1{
         padding-right: 2%;
     }
@@ -81,7 +86,9 @@ border-radius: 25px;
 @media (max-width:1200px) {
 
     .container1{
-        height: 45vw;
+        height: 300px;
+        /* color: red; */
+
     }
     .arrow{
         padding-left: 0px;
@@ -91,8 +98,20 @@ border-radius: 25px;
         padding-right: 2%;
     }
 }
+
+@media (max-width:1200px) {
+
+    .title1{
+        font-size: 35px;
+    }
+    .box1{
+        font-size: 24px;
+    }
+}
+
 @media (max-width:480px) 
 {
+   
     .title1{
         font-size: 20px;
         margin-bottom: 0;
