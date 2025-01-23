@@ -81,7 +81,7 @@ textarea {
 button {
     width: 100%;
     padding: 12px;
-    background-color: #007bff;
+    background-color: #000000;
     color: #fff;
     font-size: 1.1rem;
     border: none;
@@ -91,11 +91,11 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #1d2d41;
 }
 
 button:active {
-    background-color: #004494;
+    background-color:  #42474d;
 }
 
 @media (max-width: 768px) {
