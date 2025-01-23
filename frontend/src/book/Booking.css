@@ -1,0 +1,257 @@
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: #dfe6f0; */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.form-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    background: url('../assets/herobg.jpeg') no-repeat center center;
+    background-size: cover;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); 
+    z-index: 1;
+}
+
+form, h2,.form-container label {
+    position: relative;
+    z-index: 2; }
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #e4e4e4;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004494;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .form-container {
+        width: 100%;
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+}
+/* UserForm.css */
+
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.form-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    background: url('../asserts/herobg.jpeg') no-repeat center center;
+    background-size: cover;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); 
+    z-index: 1;
+}
+
+form, h2,.form-container label {
+    position: relative;
+    z-index: 2; }
+
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004494;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .form-container {
+        width: 100%;
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+} */

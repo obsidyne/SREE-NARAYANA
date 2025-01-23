@@ -6,6 +6,7 @@ export default function Navbar() {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+    }
    };
   return (
     <div className="nav-container">
