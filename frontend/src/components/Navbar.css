@@ -1,11 +1,10 @@
-/* Existing desktop styles remain unchanged */
+/* General Styles */
 .nav-container {
     width: 97%;
     height: 50px;
     color: black;
     background-color: #ffffff;
     border-radius: 20px;
-    column-gap: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -13,15 +12,16 @@
     margin: 15px 0px;
     padding: 10px 25px;
     font-family: "DM Serif Text";
+    position: relative;
+    z-index: 100; /* Ensure dropdown appears above other content */
   }
   
+  /* Header Section */
   .nav-head {
     color: #474023;
-    width: 50%;
     display: flex;
     flex-direction: row;
     column-gap: 10px;
-    justify-content: start;
     align-items: center;
     text-align: left;
   }
@@ -35,11 +35,18 @@
     font-size: 14px;
   }
   
+  /* Desktop Navigation Links */
+  .nav-items {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+  }
+  
   .nav-list {
     display: flex;
     flex-direction: row;
     column-gap: 50px;
-    padding: 0px 10px;
+    padding: 0;
   }
   
   .nav-list li {
@@ -55,39 +62,44 @@
   
   /* Mobile View Hamburger Icon */
   .hamburger {
-    display: none; /* Hidden in desktop and tab view */
-    font-size: 24px;
+    display: none; /* Hidden in desktop view */
+    font-size: 20px;
     cursor: pointer;
     color: #474023;
   }
   
-  /* Mobile Dropdown Menu */
+  /* Mobile Menu Dropdown */
   .mobile-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; /* Full width of the device */
-    height: 100%; /* Full height of the device */
+    position: absolute;
+    top: 50px; /* Dropdown starts right below the nav-container */
+    right: 25px;
+    width: 200px;
     background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    padding: 10px 0;
+    z-index: 999; /* Ensure it appears above other elements */
+  }
+  
+  .mobile-menu.open {
+    display: flex; /* Show when the menu is toggled open */
   }
   
   .nav-list-mobile {
     list-style: none;
     margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    text-align: left;
+    padding: 5px 20px;
+    width: 100%;
   }
   
   .nav-list-mobile li {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     color: #474023;
@@ -98,53 +110,26 @@
   }
   
   /* Responsive Design */
-  @media screen and (max-width: 1024px) {
-    /* Adjust for tablets */
-    .nav-container {
-        width: 90%;
-      flex-wrap: wrap;
-      padding: 10px 15px;
+  @media screen and (max-width: 900px) {
+    .nav-container{
+        max-width: 87%;
+        height: 20px;
+    }
+    /* Mobile View */
+    .nav-head {
+      display: none; /* Hide the header in mobile view */
+    }
+
+    .hamburger{
+        font-size: 20px;
     }
   
-    .nav-head h1 {
-      font-size: 18px;
-    }
-  
-    .nav-head span {
-      font-size: 12px;
-    }
-  
-    .nav-list {
-      column-gap: 30px;
-    }
-  
-    .nav-list li {
-      font-size: 14px;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    /* Adjust for mobile */
     .nav-items {
       display: none; /* Hide the desktop navigation links */
-      width: 97%;
     }
   
     .hamburger {
       display: block; /* Show hamburger icon */
-    }
-  
-    .nav-head {
-      width: 70%; /* Adjust the header width */
-      justify-content: center;
-    }
-  
-    .nav-head h1 {
-      font-size: 20px;
-    }
-  
-    .nav-head span {
-      font-size: 14px;
     }
   }
   
